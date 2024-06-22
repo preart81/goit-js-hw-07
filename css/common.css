@@ -8,7 +8,8 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
+  background: #fff;
   color: #212121;
   line-height: 1.5;
 }
@@ -112,6 +113,9 @@ button:hover {
   padding: 32px;
   align-items: flex-start;
   gap: 16px;
+
+  border-radius: 8px;
+  background: #f6f6fe;
 }
 
 #controls input {
@@ -135,4 +139,15 @@ button:hover {
 
 [data-destroy]:hover {
   background: #ff7070;
+}
+
+#boxes {
+  margin-top: 16px;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 44px;
+  border-radius: 8px;
+  background: #f6f6fe;
 }
