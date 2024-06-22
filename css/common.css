@@ -76,7 +76,6 @@ body {
   border: 1px solid #808080;
 }
 
-.login-form button,
 button {
   box-sizing: border-box;
   width: max-content;
@@ -88,12 +87,13 @@ button {
   padding: 8px 16px;
 
   color: #fff;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
+}
+
+button:hover {
+  background: #6c8cff;
 }
 
 .widget {
@@ -105,4 +105,34 @@ button {
 
 .widget p {
   margin: 0;
+}
+
+#controls {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+[data-destroy] {
+  background: #ff4e4e;
+}
+
+[data-destroy]:hover {
+  background: #ff7070;
 }
