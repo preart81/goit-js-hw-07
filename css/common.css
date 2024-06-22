@@ -69,12 +69,18 @@ body {
   gap: 8px;
 }
 
-.login-form input {
+input {
+  padding: 8px 16px;
   width: 360px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #808080;
+  font-size: 16px;
+
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 button {
@@ -119,18 +125,8 @@ button:hover {
 }
 
 #controls input {
-  border: 1px solid #808080;
-  border-radius: 8px;
-  padding: 8px;
   width: 150px;
-  height: 40px;
-
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+  border-radius: 8px;
 }
 
 [data-destroy] {
