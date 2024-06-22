@@ -9,8 +9,10 @@ const onFormSubmit = (event) => {
     return;
   } else {
     const formData = {
-      email: email.value.trim(),
-      password: password.value.trim(),
+      // email: email.value.trim(),
+      [event.currentTarget.elements.email.name]: email.value.trim(),
+      // password: password.value.trim(),
+      [event.currentTarget.elements.password.name]: password.value.trim(),
     };
 
     console.log(formData);
